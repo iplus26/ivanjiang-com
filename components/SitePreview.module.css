@@ -1,0 +1,37 @@
+.title { 
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.desc { 
+    color: #444;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.thumbnail {
+    flex-basis: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.previewContainer{
+    display: flex;
+    background-color: #eee;
+    width: 100vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.previewContainer * { 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.previewContainer .content { 
+    flex:1;
+}
